@@ -256,6 +256,10 @@
     lodash "^4.17.11"
     to-fast-properties "^2.0.0"
 
+"@fortawesome/fontawesome-free@^5.9.0":
+  version "5.9.0"
+  resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-free/-/fontawesome-free-5.9.0.tgz#1aa5c59efb1b8c6eb6277d1e3e8c8f31998b8c8e"
+
 "@ngtools/webpack@7.2.4":
   version "7.2.4"
   resolved "https://registry.yarnpkg.com/@ngtools/webpack/-/webpack-7.2.4.tgz#5645b0a3af6a37abd6c1b277d9e16c4c27cff11e"

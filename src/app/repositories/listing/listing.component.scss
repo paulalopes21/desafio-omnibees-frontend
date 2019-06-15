@@ -1,0 +1,31 @@
+@import 'variables';
+
+.list {
+
+  &__item {
+    border-radius: $border-radius;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 1px 4px rgba(0,0,0,.04), inset 0 0 0 1px rgba(0,0,0,.09);
+    transition: all .2s ease-in-out;
+
+    &:hover {
+      background-color: $light;
+    }
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__label {
+    background-color: $success;
+    border-radius: $border-radius;
+    color: $white;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 300;
+    margin-right: 15px;
+    padding: 5px 10px;
+  }
+}

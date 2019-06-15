@@ -1,0 +1,10 @@
+<div class="main-content">
+  <ul *ngIf="repositories" class="list">
+    <li *ngFor="let repository of repositories" class="list__item">
+      <h2 class="list__title">{{ repository.name }}</h2>
+      <span class="list__label"><i class="fas fa-star"></i> Stars {{ repository.stargazers_count }}</span>
+      <span class="list__label"><i class="fas fa-code-branch"></i> Forks {{ repository.forks }}</span>
+    </li>
+  </ul>
+</div>
+

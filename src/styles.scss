@@ -1,1 +1,40 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'variables';
+
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  color: $dark;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  font-weight: 700;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+.main-content {
+  padding: 20px;
+}
