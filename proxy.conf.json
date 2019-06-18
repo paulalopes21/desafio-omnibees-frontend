@@ -1,0 +1,14 @@
+{
+  "/api/*": {
+    "target":  {
+       "host": "github.com",
+       "protocol": "https:",
+       "port": 443
+     },
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true,
+    "pathRewrite": {"^/api" : ""}
+  }
+}
+

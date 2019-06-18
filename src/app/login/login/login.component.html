@@ -1,0 +1,13 @@
+<div class="main-content">
+
+  <div class="login-content">
+    <div *ngIf="loading" class="spinner"></div>
+
+    <div *ngIf="!loading" class="card-login">
+      <i class="fab fa-github-square fa-5x"></i>
+      <button (click)="auth()">Login with Github</button>
+    </div>
+  </div>
+
+
+</div>
