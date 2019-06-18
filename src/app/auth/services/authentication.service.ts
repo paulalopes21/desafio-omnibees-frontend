@@ -52,4 +52,8 @@ export class AuthenticationService {
     sessionStorage.removeItem('currentUser');
     this.currentUserSubject.next(null);
   }
+
+  getUser(token: string) {
+    return this.http.get<any>(`https://api.github.com/user?access_token=${token}`);
+  }
 }

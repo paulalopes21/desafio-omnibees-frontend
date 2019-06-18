@@ -1,0 +1,15 @@
+@import 'variables';
+
+header {
+  background-color: $primary;
+  padding: 1rem;
+
+  nav{
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  a{
+    color: $white;
+  }
+}
