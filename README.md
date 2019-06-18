@@ -10,4 +10,4 @@ To see a demo go to `https://desafio-omnibees-frontend.herokuapp.com/`
 
 ## Development server
 
-Run `npm start` for a dev server. Navigate to `http://localhost:4200/`.
+Run `npm run start:dev` for a dev server. Navigate to `http://localhost:4200/`.
