@@ -24,7 +24,7 @@ export class ListingComponent implements OnInit {
     this.getUser();
   }
 
-  getUser(): void {
+  getUser() {
     this.authenticationService.getUser(this.currentUser.access_token).subscribe(
       (data) => {
         this.data = data;
@@ -33,9 +33,12 @@ export class ListingComponent implements OnInit {
     );
   }
 
-  getRepos(): void {
+  getRepos() {
     this.repositoriesService.getRepoByUser(this.data.login)
-      .subscribe(repositories =>  this.repositories = repositories);
+      .subscribe((repositories) =>  {
+        this.repositories = repositories;
+      });
   }
+
 
 }

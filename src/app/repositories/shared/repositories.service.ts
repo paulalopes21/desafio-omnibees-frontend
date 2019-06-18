@@ -1,7 +1,9 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient, HttpHeaders, HttpResponse } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
-import { retry, catchError } from 'rxjs/operators';
+import { retry, catchError, tap } from 'rxjs/operators';
+import { map } from 'rxjs/operators';
+
 
 import { Repository } from '../shared/repository';
 
@@ -17,12 +19,17 @@ export class RepositoriesService {
   constructor(private http: HttpClient) {}
 
   getRepoByUser(user: string): Observable<Repository[]> {
-    return this.http.get<Repository[]>(`${this.apiUrl}/users/${user}/repos`)
+    return this.http.get<Repository[]>(`${this.apiUrl}/users/${user}/repos?per_page=5`)
       .pipe(
+        tap((res) => {
+          console.log(res)
+        }),
         retry(1),
         catchError(this.handleError)
       );
   }
+
+
 
   handleError(error) {
     let errorMessage = '';
