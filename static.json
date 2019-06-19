@@ -6,7 +6,7 @@
   },
   "proxies": {
     "/api/": {
-      "origin": "https://github.com"
+      "origin": "https://github.com/api"
     }
   }
 }
